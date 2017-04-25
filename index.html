@@ -16,6 +16,33 @@
         <a href="resume">Resume</a>
     </nav>
   This is a page about Katherine Kim, an Information and Technology Management Undergraduate at Illinois Insititute of Technology. This page was created as a project for the ITM 361 Fundamentals of Web Development class and contains both a little bit of information about myself and my resume.
+    <div class="slider-wrapper">
+        <div id="slider">
+            <div class="slide1">
+                <img src="media/iit1.jpg" alt="" />
+            </div>
+            <div class="slide2">
+                <img src="media/iit2.jpg" alt="" />
+            </div>
+            <div class="slide3">
+                <img src="media/iit3.jpg" alt="" />
+            </div>
+            <div class="slide4">
+                <img src="media/iit4.jpg" alt="" />
+            </div>
+        </div>
+        <div id="slider-direction-nav"></div>
+        <div id="slider-control-nav"></div>
+    </div>
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var slider = $('#slider').leanSlider({
+            directionNav: '#slider-direction-nav',
+            controlNav: '#slider-control-nav'
+        });
+    });
+    </script>
   <footer>
   <p>Katherine Kim ❄
       <a href="kkim57@hawk.iit.edu">kkim57@hawk.iit.edu</a></p>
